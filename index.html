@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A CSE 194 working prototype about AI and student learning.">
+  <title>AI and Student Learning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="site-title" href="#top">AI and Student Learning</a>
+    <nav aria-label="Main navigation">
+      <a href="#data">Data</a>
+      <a href="#research">Research</a>
+      <a href="#takeaways">Takeaways</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="intro" id="top">
+      <p class="label">CSE 194 · Working Prototype · Fall 2026</p>
+      <h1>How does AI affect student learning?</h1>
+      <p>AI tools are already part of many students' schoolwork. They can explain concepts, summarize readings, help with research, edit writing, and solve problems. These uses can save time and make support easier to access.</p>
+      <p>At the same time, completing a task is not the same as learning from it. A student may produce a stronger answer with AI while remembering less, practicing less, or becoming less able to complete a similar task alone.</p>
+      <p>This project looks at both sides. It summarizes recent surveys and learning studies, explains what each source can and cannot show, and focuses on a practical question: <strong>What kinds of AI help keep the student involved in the thinking?</strong></p>
+      <p class="note">The studies below examine different populations and tasks. Percentages from U.S. teens, UK undergraduates, and controlled experiments should not be treated as directly comparable.</p>
+    </section>
+
+    <section id="data">
+      <h2>Key data</h2>
+      <p class="section-lead">These numbers describe how commonly students report using AI and how they view it. Survey responses do not directly measure learning.</p>
+
+      <div class="data-list">
+        <article class="data-item">
+          <p class="data-number">54%</p>
+          <div>
+            <h3>U.S. teens have used chatbots for schoolwork</h3>
+            <p>In a survey of 1,458 U.S. teens ages 13-17, 54% said they had used AI chatbots to get help with schoolwork.</p>
+            <p class="source-link">Source: <a href="https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/" target="_blank" rel="noreferrer">Pew Research Center, How Teens Use and View AI (2026)</a></p>
+          </div>
+        </article>
+
+        <article class="data-item">
+          <p class="data-number">10%</p>
+          <div>
+            <h3>Use chatbots for all or most of their schoolwork</h3>
+            <p>One in ten U.S. teens said chatbots help with all or most of their schoolwork. Another 21% said chatbots help with some of it.</p>
+            <p class="source-link">Source: <a href="https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/" target="_blank" rel="noreferrer">Pew Research Center, How Teens Use and View AI (2026)</a></p>
+          </div>
+        </article>
+
+        <article class="data-item">
+          <p class="data-number">95%</p>
+          <div>
+            <h3>UK undergraduates report using AI in some form</h3>
+            <p>A survey of 1,054 full-time UK undergraduates found that 95% used AI in at least one way. This is UK data and should not be generalized to all students.</p>
+            <p class="source-link">Source: <a href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/" target="_blank" rel="noreferrer">HEPI, Student Generative AI Survey 2026</a></p>
+          </div>
+        </article>
+
+        <article class="data-item">
+          <p class="data-number">49%</p>
+          <div>
+            <h3>Say AI improved their student experience</h3>
+            <p>In the same HEPI survey, 49% said AI had improved their student experience. This is a self-reported opinion, not a test of knowledge or skill.</p>
+            <p class="source-link">Source: <a href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/" target="_blank" rel="noreferrer">HEPI, Student Generative AI Survey 2026</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="trend">
+        <h3>Reported ChatGPT use for schoolwork increased from 13% to 26%</h3>
+        <p>Pew estimated that 13% of all U.S. teens had used ChatGPT for schoolwork in 2023. In its 2024 survey, that figure was 26%. These earlier surveys asked specifically about ChatGPT, while the 2026 report asks about AI chatbots more generally.</p>
+        <p class="source-link">Sources: <a href="https://www.pewresearch.org/short-reads/2023/11/16/about-1-in-5-us-teens-whove-heard-of-chatgpt-have-used-it-for-schoolwork/" target="_blank" rel="noreferrer">Pew 2023</a> and <a href="https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/" target="_blank" rel="noreferrer">Pew 2025</a></p>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>What learning studies suggest</h2>
+      <p class="section-lead">The evidence does not support a simple conclusion that AI is always helpful or always harmful. The result depends on the task and how the tool is used.</p>
+
+      <div class="finding">
+        <h3>1. Guardrails can change the learning outcome</h3>
+        <p>A high school mathematics experiment found that unrestricted AI help improved students' performance during practice but harmed later performance when the AI was removed. A tutor-style version with learning-focused guardrails largely avoided that harm.</p>
+        <p class="source-link">Source: <a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noreferrer">Bastani et al. (2025), Generative AI without guardrails can harm learning</a></p>
+        <p class="limit"><strong>Limit:</strong> About 1,000 students in one school and one subject.</p>
+      </div>
+
+      <div class="finding">
+        <h3>2. Better work does not necessarily mean more learning</h3>
+        <p>In a university writing study, students using ChatGPT improved their essays, but the study did not find significantly higher knowledge gain or transfer. The authors warn that students may rely on the tool instead of monitoring and regulating their own learning.</p>
+        <p class="source-link">Source: <a href="https://doi.org/10.1111/bjet.13544" target="_blank" rel="noreferrer">Fan et al. (2025), Beware of metacognitive laziness</a></p>
+        <p class="limit"><strong>Limit:</strong> 117 university students completing one writing task.</p>
+      </div>
+
+      <div class="finding">
+        <h3>3. The type of help matters</h3>
+        <p>A programming-course study found that asking AI for explanations supported understanding more than asking it to generate exercise solutions. This suggests that AI may be more useful when it supports a student's reasoning instead of replacing it.</p>
+        <p class="source-link">Source: <a href="https://arxiv.org/abs/2409.09047" target="_blank" rel="noreferrer">Lehmann, Cornelius, and Sting (2025), AI Meets the Classroom</a></p>
+        <p class="limit"><strong>Limit:</strong> Programming courses only; the cited version is a preprint.</p>
+      </div>
+
+      <div class="finding">
+        <h3>4. Some possible cognitive effects remain uncertain</h3>
+        <p>An essay-writing preprint compared participants using ChatGPT, search engines, or no tool and reported differences in brain connectivity and writing behavior. The study is useful as an early warning, but it does not prove permanent or long-term harm.</p>
+        <p class="source-link">Source: <a href="https://arxiv.org/abs/2506.08872" target="_blank" rel="noreferrer">Kosmyna et al. (2025), Your Brain on ChatGPT</a></p>
+        <p class="limit"><strong>Limit:</strong> Small sample, short writing task, and fewer participants in the final session.</p>
+      </div>
+    </section>
+
+    <section id="takeaways">
+      <h2>Simple takeaways for students</h2>
+      <ul class="takeaway-list">
+        <li>Make your own attempt before asking AI to solve the problem.</li>
+        <li>Ask for a hint, explanation, example, or question instead of a finished answer.</li>
+        <li>Explain the answer back in your own words.</li>
+        <li>Check important facts, calculations, quotations, and citations.</li>
+        <li>After using AI, try a similar task without it.</li>
+        <li>Follow the AI policy for the specific course and assignment.</li>
+      </ul>
+      <p class="note">These are practical suggestions based on patterns in the research, not a validated scoring system or a guarantee of learning.</p>
+    </section>
+
+    <section id="sources">
+      <h2>All sources from our source list</h2>
+      <p class="section-lead">The full project source list contains peer-reviewed papers, preprints, survey reports, and one industry report. Each source should be read together with its population, method, and limitations.</p>
+
+      <ol class="source-list">
+        <li><a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noreferrer">Bastani et al. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics.</a> <span>Peer-reviewed paper.</span></li>
+        <li><a href="https://doi.org/10.1111/bjet.13544" target="_blank" rel="noreferrer">Fan et al. (2025). Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance.</a> <span>Peer-reviewed paper.</span></li>
+        <li><a href="https://arxiv.org/abs/2409.09047" target="_blank" rel="noreferrer">Lehmann, Cornelius, and Sting (2025). AI meets the classroom: When do large language models harm learning?</a> <span>Preprint.</span></li>
+        <li><a href="https://arxiv.org/abs/2506.08872" target="_blank" rel="noreferrer">Kosmyna et al. (2025). Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task.</a> <span>Preprint.</span></li>
+        <li><a href="https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/" target="_blank" rel="noreferrer">McClain et al. (2026). How teens use and view AI.</a> <span>Pew Research Center survey report.</span></li>
+        <li><a href="https://www.pewresearch.org/internet/2026/02/24/demographic-differences-in-how-teens-use-and-view-ai/" target="_blank" rel="noreferrer">Pew Research Center (2026). Demographic differences in how teens use and view AI.</a> <span>Survey report.</span></li>
+        <li><a href="https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/" target="_blank" rel="noreferrer">Sidoti and Park (2025). About a quarter of U.S. teens have used ChatGPT for schoolwork - double the share in 2023.</a> <span>Pew Research Center survey report.</span></li>
+        <li><a href="https://www.pewresearch.org/short-reads/2023/11/16/about-1-in-5-us-teens-whove-heard-of-chatgpt-have-used-it-for-schoolwork/" target="_blank" rel="noreferrer">Pew Research Center (2023). About 1 in 5 U.S. teens who've heard of ChatGPT have used it for schoolwork.</a> <span>Survey report.</span></li>
+        <li><a href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2025/" target="_blank" rel="noreferrer">Freeman (2025). Student Generative AI Survey 2025.</a> <span>HEPI Policy Note 61.</span></li>
+        <li><a href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/" target="_blank" rel="noreferrer">Stephenson and Armstrong (2026). Student Generative AI Survey 2026.</a> <span>HEPI Report 199.</span></li>
+        <li><a href="https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude" target="_blank" rel="noreferrer">Handa et al. (2025). Anthropic Education Report: How university students use Claude.</a> <span>Industry report covering one AI product.</span></li>
+      </ol>
+
+      <p class="last-checked">Links last checked November 13, 2026.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>AI and Student Learning</strong></p>
+    <p>Team hoops then eats · CSE 194 · Fall 2026</p>
+  </footer>
+</body>
+</html>
